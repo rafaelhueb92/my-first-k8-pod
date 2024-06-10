@@ -1,1 +1,20 @@
+<h3> Hint </h3>
 <p> Use this if you try to use minikube on a M1 chip MacOs: https://cs101.blog/2023/01/12/run-a-minikube-on-mac-with-m1-chip/#:~:text=First%2C%20install%20Docker%2C%20see%20more,will%20download%20and%20install%20it. </p>
+
+# README for Using `kubectl create` to Run a YAML File and Basic `kubectl` Commands
+
+## Introduction
+
+This README provides a step-by-step guide on how to use `kubectl create` to run a YAML file and includes some basic `kubectl` commands to help you get started with managing your Kubernetes cluster.
+
+## Prerequisites
+
+- Kubernetes cluster set up and running
+- `kubectl` installed and configured to communicate with your cluster
+
+## Running a YAML File with `kubectl create`
+
+To create resources defined in a YAML file, use the `kubectl create -f` command followed by the path to your YAML file. Here's a general example:
+
+```sh
+kubectl create -f <path-to-your-yaml-file>
