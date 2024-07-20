@@ -18,3 +18,43 @@ To create resources defined in a YAML file, use the `kubectl create -f` command 
 
 ```sh
 kubectl create -f <path-to-your-yaml-file>
+
+## Running Terraform
+Use this terraform apply -auto-approve
+
+## NOTES
+
+# To solve 'NoneType' object is not iterable aws eks 
+Use rm ~/.kube/config in the local terminal
+
+## Userfull Links
+
+# Getting Start
+https://docs.aws.amazon.com/eks/latest/userguide/getting-started-console.html 
+
+# AWS Client
+https://docs.aws.amazon.com/eks/latest/userguide/getting-started-console.html#gs-console-install-awscli
+
+# About AWS-IAM-Authenticator
+https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html
+
+# How to install AWS-IAM-Authenticator in Linux or MacOs
+https://abhayksingh.com/how-to-install-aws-iam-authenticator-on-windows-linux-macos/
+
+## Generating SSH File
+
+The SSH key pair will be generated locally on your machine, and the public key name will be referenced in Terraform. The public key is expected at the path ~/.ssh/id_rsa.pub. Below is an example of how to generate and use the SSH key pair:
+
+# Generating the SSH Key Pair
+If you don't already have an SSH key pair, you can generate one using the ssh-keygen command:
+
+sh
+ssh-keygen -t rsa -b 2048 -f ~/.ssh/id_rsa
+This will create two files:
+
+~/.ssh/id_rsa (private key)
+~/.ssh/id_rsa.pub (public key)
+
+## Repo to use to create the pods 
+
+Use this repo to clone: https://github.com/guniversityBR/aplicacao-voto.git
